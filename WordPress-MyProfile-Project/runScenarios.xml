@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="url" value="https://wordpress.com/me"></parameter>
+	<parameter name="userName" value="janedoetests858@gmail.com"></parameter>
+	<parameter name="password" value="testingprofile"></parameter>
+	<parameter name="changeFirstName" value="Jane2021"></parameter>
+	<parameter name="changeLastName" value="Doe2021"></parameter>
+	<parameter name="changePublicDisplayName"
+		value="LetsTestDisplayName"></parameter>
+	<parameter name="changeAboutMe" value="La La La La La"></parameter>
+	<parameter name="changeProfilePicture" value="testImage.jpeg"></parameter>	
+	<parameter name="addURL" value="asdef.com"></parameter>
+	<parameter name="urlDescription" value="URL Description"></parameter>
+	<test thread-count="5" name="ScenariosTests">
+		<classes>
+			<class name="test.Scenario1"></class>
+			<class name="test.Scenario2"></class>
+			<class name="test.Scenario3"></class>
+			<class name="test.Scenario4"></class>
+			<class name="test.Scenario5"></class>
+		</classes>
+	</test> <!-- ScenariosTests -->
+</suite> <!-- Regression Suite -->
